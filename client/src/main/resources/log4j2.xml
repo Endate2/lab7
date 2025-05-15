@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+    <Appenders>
+        <File name="FileAppender" fileName="logs/client.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{16} - %msg%n"/>
+        </File>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{16} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="consoleOutput" level="error">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="fileOutput" level="all">
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+        <Root level="all">
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
