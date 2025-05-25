@@ -1,0 +1,2 @@
+2025-05-10 09:34:03.236 [main] ERROR clientUtils.ConnectionManager - Ошибка подключения: Connection refused
+2025-05-10 09:34:03.238 [main] WARN  clientUtils.Console - Нет подключения к серверу
